@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023.98px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767.98px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Assignment-03</title>
+</head>
+
+<body>
+    <div class="container ">
+        <div class="header-container ">
+            <img src="img/banner.jpg" alt="a man">
+            <div class="center-text">
+                <h1>Nguyễn Trường Thành</h1>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="nav">
+                <div class="left-navbar">
+                    <a href="#infor"><i class="fa-solid fa-user"></i></i>Thông Tin</a>
+                    <a href="#background"><i class="fa-solid fa-file"></i>LÝ LỊCH</a>
+                </div>
+                <img src="img/avatar.jpg" alt="avatar" class="nav-img">
+                <div class="right-navbar">
+                    <a href="#certificate"><i class="fa-solid fa-envelope"></i>Chứng chỉ</a>
+                    <a href="#project"><i class="fa-solid fa-star"></i>Dự án</a>
+                </div>
+            </div>
+            <div id="infor" class="infor ">
+
+                <div class="row d-md-none">
+                    <div class="col-12 mb-4">
+                        <h2>Mục tiêu nghề nghiệp</h2>
+                        <p>Là một sinh viên đang học chương trình chứng chỉ Doanh nghiệp FUNIX. Em mong muốn có cơ hội làm việc trong môi trường chuyên nghiệp để áp dụng những kiến thức đã học vào thực tế, từ đó nâng cao kỹ năng chuyên môn và tích lũy kinh
+                            nghiệm thực tiễn. Em luôn sẵn sàng học hỏi, tiếp thu kiến thức mới và cải thiện các kỹ năng mềm như giao tiếp, làm việc nhóm, quản lý thời gian.
+                        </p>
+                        <P>Mục tiêu của em trong quá trình thực tập là hiểu rõ hơn về quy trình làm việc, văn hóa doanh nghiệp và không ngừng trau dồi kỹ năng để đóng góp giá trị cho công ty. Em hy vọng có thể chứng minh năng lực của mình và mở ra cơ hội
+                            trở thành nhân viên chính thức trong tương lai.</P>
+                    </div>
+
+
+                    <div id="email-form-container-mobile" class="mobile">
+                        <h2>Thông Tin Cá Nhân</h2>
+                        <form id="email-form-mobile">
+                            <input type="email" id="email-input-mobile" placeholder="Nhập email của bạn" required>
+                            <button type="submit">Xem Thông Tin</button>
+                        </form>
+                        <p id="error-message-mobile" class="hide">Email không hợp lệ! Vui lòng nhập lại.</p>
+                    </div>
+                    <div id="personal-info-container-mobile" class="personal-info hide col-12">
+                        <h2>Thông tin cá nhân</h2>
+                        <p><strong>Giới tính:</strong> Nam</p>
+                        <p><strong>Ngày sinh:</strong> 05/12/2003</p>
+                        <p><strong>Điện thoại:</strong> (+84)932289106</p>
+                        <p><strong>Email:</strong> thanhntFX59383@funix.edu.vn</p>
+                        <p><strong>Địa chỉ:</strong>Hà Nội</p>
+                    </div>
+                </div>
+                <!-- LAYOUT RIÊNG CHO LAPTOP -->
+
+                <div class="infor d-none d-md-grid ">
+                    <div class="title-text">
+                        <h2>Mục tiêu nghề nghiệp</h2>
+                        <p>Là một sinh viên đang học chương trình chứng chỉ Doanh nghiệp FUNIX. Em mong muốn có cơ hội làm việc trong môi trường chuyên nghiệp để áp dụng những kiến thức đã học vào thực tế, từ đó nâng cao kỹ năng chuyên môn và tích lũy kinh
+                            nghiệm thực tiễn. Em luôn sẵn sàng học hỏi, tiếp thu kiến thức mới và cải thiện các kỹ năng mềm như giao tiếp, làm việc nhóm, quản lý thời gian.
+                        </p>
+                        <P>Mục tiêu của em trong quá trình thực tập là hiểu rõ hơn về quy trình làm việc, văn hóa doanh nghiệp và không ngừng trau dồi kỹ năng để đóng góp giá trị cho công ty. Em hy vọng có thể chứng minh năng lực của mình và mở ra cơ hội
+                            trở thành nhân viên chính thức trong tương lai.</P>
+                    </div>
+                    <div id="email-form-container-laptop" class="laptop">
+                        <h2>Thông Tin Cá Nhân</h2>
+                        <form id="email-form-laptop">
+                            <input type="email" id="email-input-laptop" placeholder="Nhập email của bạn" required>
+                            <button type="submit">Xem Thông Tin</button>
+                        </form>
+                        <p id="error-message-laptop" class="hide">Email không hợp lệ! Vui lòng nhập lại.</p>
+                    </div>
+                    <div id="personal-info-container-laptop" class="personal-info hide infor-text">
+                        <h2>Thông tin cá nhân</h2>
+                        <p><strong>Giới tính:</strong> Nam</p>
+                        <p><strong>Ngày sinh:</strong> 05/12/2003</p>
+                        <p><strong>Điện thoại:</strong> (+84)932289106</p>
+                        <p><strong>Email:</strong> thanhntFX59383@funix.edu.vn</p>
+                        <p><strong>Địa chỉ:</strong>Hà Nội</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="background" id="background">
+
+                <div class="interests">
+                    <div class="interests-header">
+                        <div class="interests-title">Sở thích</div>
+                        <div class="interests-icon">
+                            <i class="fas fa-binoculars"></i>
+                        </div>
+                    </div>
+                    <button class="toggle-btn">View More</button>
+                    <div class="interests-content hide">
+                        <div class="interest-item">
+                            <i class="fas fa-bullhorn"></i>
+                            <p>Âm nhạc</p>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-chess-knight"></i>
+                            <p>Chơi game</p>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fa-solid fa-plane"></i>
+                            <p>Du lịch</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="skills">
+                    <div class="skills-header">
+                        <div class="skills-title">Kỹ năng</div>
+                        <div class="skills-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                    </div>
+                    <button class="toggle-btn">View More</button>
+                    <div class="skills-content hide">
+                        <div class="skill-item">
+                            <p>HTML/CSS: Fundamental</p>
+                            <div class="skill-level">
+                                <span class="level-bar blue"></span>
+                                <span class="level-bar grey"></span>
+                                <span class="level-bar grey"></span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <p>SQL: Fundamental</p>
+                            <div class="skill-level">
+                                <span class="level-bar blue"></span>
+                                <span class="level-bar grey"></span>
+                                <span class="level-bar grey"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="education">
+                    <div class="education-header">
+                        <h2 class="education-title">Học vấn</h2>
+                        <div class="education-icon">
+                            <i class="fa-solid fa-pencil"></i>
+                        </div>
+                    </div>
+                    <button class="toggle-btn">View More</button>
+                    <div class="education-content hide">
+                        <div class="education-items">
+                            <h3>HUBT </h3>
+                            <p>08/2021 - Nay</p>
+                            <p>Công nghệ thông tin</p>
+                            <p>GPA: 8.1/10</p>
+                        </div>
+                        <div class="education-items">
+                            <h3>FUNIX </h3>
+                            <p>03/2025 - Nay</p>
+                            <p>Full Stack Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="languages">
+                    <div class="languages-header">
+                        <h2 class="languages-title">Ngôn ngữ</h2>
+                        <div class="languages-icon">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                    </div>
+                    <button class="toggle-btn">View More</button>
+                    <div class="languages-content hide">
+                        <div class="language-item">
+                            <p>Tiếng Anh</p>
+                            <div class="language-level">
+                                <span class="level-bar blue"></span>
+                                <span class="level-bar grey"></span>
+                                <span class="level-bar grey"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="certificate" id="certificate">
+                <div class="certificate-header">
+                    <h2 class="certificate-title">Chứng chỉ</h2>
+                </div>
+                <div class="certificate-content">
+                    <div class="certificate-item">
+                        <img src="img/Cert_WEB.png" alt="ccertificate web">
+                        <h3>Chứng chỉ Lập trình Web - FUNIX</h3>
+                        <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                        <p>GPA: 8.6</p>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="img/Cert_PRF.png" alt="certificate js">
+                        <h3>Chứng chỉ Lập trình Javascript - FUNIX</h3>
+                        <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                        <p>- GPA: 8.9</p>
+                    </div>
+                    <div class="certificate-item">
+                        <img src="img/Cert_DBI.png" alt="certificate data">
+                        <h3>Chứng chỉ Thiết kế Database - FUNIX</h3>
+                        <p>- Chứng chỉ thuộc chương trình CCDN</p>
+                        <p>GPA: 8.0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project" id="project">
+                <div class="project-header">
+                    <h2 class="project-title">Dự án</h2>
+                </div>
+                <div class="project-content">
+                    <div class="project-card">
+                        <img src="img/project_1.png" alt="cv cá nhân">
+                        <div class="project-info">
+                            <h3>CV CÁ NHÂN</h3>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-year">2021</div>
+                            <div>FUNiX</div>
+                            <div>Developer</div>
+                        </div>
+                        <div class="project-table">
+                            <table>
+                                <tr>
+                                    <td><strong>Mô tả</strong></td>
+                                    <td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nhiệm vụ</strong></td>
+                                    <td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Công nghệ</strong></td>
+                                    <td>- HTML, CSS</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <a href="ProjectOverview.html">Xem thêm</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/project_2.png" alt="web quan ly thu cung">
+                        <div class="project-info">
+                            <h3>TRANG WEB QUẢN LÝ THÚ CƯNG</h3>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-year">2021</div>
+                            <div>FUNiX</div>
+                            <div>Developer</div>
+                        </div>
+                        <div class="project-table">
+                            <table>
+                                <tr>
+                                    <td><strong>Mô tả</strong></td>
+                                    <td>Ứng dụng giúp quản lý các thông tin của thứ cưng như: Cân nặng, giống, tình trạng, tiêm chủng,... Bao gồm các chức năng thêm, sửa, xoá.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nhiệm vụ</strong></td>
+                                    <td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Công nghệ</strong></td>
+                                    <td>- HTML, CSS, Javascript</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <a href="ProjectOverview.html">Xem thêm</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="img/project_3.png" alt="trang web tin tuc">
+                        <div class="project-info">
+                            <h3>TRANG WEB TIN TỨC</h3>
+                        </div>
+                        <div class="project-meta">
+                            <div class="project-year">2021</div>
+                            <div>FUNiX</div>
+                            <div>Developer</div>
+                        </div>
+                        <div class="project-table">
+                            <table>
+                                <tr>
+                                    <td><strong>Mô tả</strong></td>
+                                    <td>Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo các từ khoá.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Nhiệm vụ</strong></td>
+                                    <td>- Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Công nghệ</strong></td>
+                                    <td>- HTML, CSS, Javascript</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a href="ProjectOverview.html">Xem thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <div class="contact">
+                <div>
+                    <a><i class="fa-brands fa-facebook"></i></a>
+                    <span class="social-text">Facebook</span>
+                </div>
+                <div>
+                    <a>
+                        <i class="fa-brands fa-twitter"></i>
+                        <span class="social-text">Twitter</span>
+                    </a>
+                </div>
+                <div>
+                    <a>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span class="social-text">Linkedin</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

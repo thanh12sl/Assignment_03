@@ -1,0 +1,397 @@
+.infor {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.toggle-btn {
+    display: none;
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.interests:hover .toggle-btn,
+.skills:hover .toggle-btn,
+.education:hover .toggle-btn,
+.languages:hover .toggle-btn {
+    display: inline-block;
+}
+
+.interests-content.hide,
+.skills-content.hide,
+.education-content.hide,
+.languages-content.hide {
+    display: none;
+}
+
+.header-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 380px;
+}
+
+.header-container img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(16px, 5vw, 32px);
+    white-space: nowrap;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.nav-img {
+    display: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 30px;
+    border-left: 1px solid rgba(177, 177, 177, 0.258);
+    border-right: 1px solid rgba(177, 177, 177, 0.258);
+}
+
+.left-navbar,
+.right-navbar {
+    display: flex;
+    align-items: center;
+    /* Căn giữa dọc bên trong mỗi phần */
+}
+
+
+/* Căn đều các phần tử bên trong left navbar */
+
+.left-navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Khoảng cách giữa các item */
+}
+
+.left-navbar li a {
+    text-decoration: none;
+}
+
+
+/* Căn đều các phần tử bên trong right navbar */
+
+.right-navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Khoảng cách giữa các item */
+}
+
+.header-container img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.infor>.title-text h2,
+.infor>#personal-info-container-laptop h2,
+.infor>#email-form-container-laptop h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.infor.d-md-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: rgba(215, 215, 215, 0.384);
+    height: auto;
+    /* Điều chỉnh chiều cao nếu cần, auto để vừa nội dung */
+    align-items: start;
+    /* Căn chỉnh các item grid theo phía trên */
+}
+
+.background {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.interests,
+.skills,
+.education,
+.languages {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.interests-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.interests-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.interests-icon {
+    font-size: 20px;
+    color: grey;
+}
+
+.interests-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interest-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.interest-item i {
+    font-size: 25px;
+    color: #007bff;
+}
+
+.interest-item p {
+    margin-top: 5px;
+}
+
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skills-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills-icon {
+    font-size: 20px;
+    color: #888;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-level {
+    display: flex;
+}
+
+.skill-item {
+    margin-bottom: 10px;
+}
+
+.level-bar {
+    width: 30px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.level-bar.blue {
+    background-color: blue;
+}
+
+.level-bar.grey {
+    background-color: lightgrey;
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.education-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.education-content {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.education-item {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.education-item h3 {
+    margin-bottom: 10px;
+}
+
+.languages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.languages-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.languages-icon {
+    font-size: 20px;
+    color: #888;
+}
+
+.languages-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-level {
+    display: flex;
+}
+
+.language-item {
+    margin-bottom: 10px;
+}
+
+.certificate {
+    background-color: rgba(215, 215, 215, 0.384);
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.certificate-title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.certificate-content {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.certificate-item {
+    border: 2px solid #d6c08d;
+    padding: 15px;
+}
+
+.certificate img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 15px;
+    background: white;
+    height: 105px;
+}
+
+.project-table {
+    height: 300px;
+    margin: 10px 0;
+}
+
+.project-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.project-year {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 35%;
+    background-color: lightgreen;
+}
+
+.project-card a {
+    text-align: center;
+}
+
+.footer-container {
+    background-color: rgba(215, 215, 215, 0.384);
+    text-align: center;
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact div {
+    padding: 0 20px;
+}
